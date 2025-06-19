@@ -10,40 +10,10 @@ const Navbar = ({ onAboutClick }) => {
       <img src={logo} alt='logo' className='logo' />
 
       <div className='desktopMenu'>
-        <Link
-          activeClass='active'
-          to='intro'
-          spy={true}
-          smooth={true}
-          offset={-100}
-          duration={500}
-          className="desktopMenuListItem"
-        >
-          Home
-        </Link>
-
+        <Link activeClass='active' to='intro' spy={true} smooth={true} offset={-100} duration={500} className="desktopMenuListItem">Home</Link>
         <span className="desktopMenuListItem" onClick={onAboutClick}>About</span>
-
-        <Link
-          activeClass='active'
-          to='skills'
-          spy={true}
-          smooth={true}
-          offset={-100}
-          duration={500}
-          className="desktopMenuListItem"
-        >
-          Skills
-        </Link>
-               <a
-          href="/Teja resume.pdf"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="desktopMenuListItem"
-        
-        >
-          Resume
-        </a>
+        <Link activeClass='active' to='skills' spy={true} smooth={true} offset={-100} duration={500} className="desktopMenuListItem">Skills</Link>
+        <a href="/Teja Resume.pdf" target="_blank" rel="noopener noreferrer" className="desktopMenuListItem">Resume</a>
       </div>
 
       <button
